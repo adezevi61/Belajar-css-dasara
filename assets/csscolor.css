@@ -1,0 +1,15 @@
+body{
+    background-color: lightblue;
+}
+
+p{
+    color: rgb(249, 110, 42);
+    font-size: 20px;
+}
+
+textarea{
+    background-color: #FCF596;
+    border: dotted;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

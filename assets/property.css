@@ -1,0 +1,36 @@
+body{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+h1{
+    text-align: end;
+    text-decoration: underline red;
+    
+}
+
+h2{
+    font-weight: 300;
+    text-decoration: underline double red;
+    
+
+}
+
+h3{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h4{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+p{
+    line-height: 2; /* untuk memberikan jarak dan spasi antar kalimat dalam satu baris*/
+    letter-spacing : 1px; /* untuk memberikan jarak dan spasi antar huruf*/
+}
