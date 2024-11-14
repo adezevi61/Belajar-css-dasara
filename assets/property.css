@@ -26,7 +26,7 @@ h4{
 }
 
 a{
-    text-decoration: none;
+     text-decoration: none; /* untuk menghilangkan gari pada text yang mengandung link */
     color: red;
 }
 
