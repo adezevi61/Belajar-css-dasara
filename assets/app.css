@@ -1,0 +1,12 @@
+body{
+    margin: 70px;
+}
+
+* {
+    background-color: lightcoral;
+}
+
+h1, h2, h3{
+    color: green;
+    background-color: white;
+}
