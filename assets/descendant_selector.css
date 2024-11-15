@@ -7,6 +7,12 @@
     font-weight: bold;
 }
 
+.udang > p:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .udang > .uu > p {
     color: red;
 }
@@ -15,7 +21,23 @@ a + button{
     background-color: gray;
 }
 
+a + button:hover{
+    background-color: orange;
+    color: green;
+    border-radius: 10px;
+}
+
 input[type="text"] {
     color: greenyellow;
     font-weight: bold;
 }
+
+se ction:nth-of-type(2n) {    /* 2n menandakan setiap kelipatan 2*/
+    background-color: aquamarine;
+}
+
+section:nth-of-type(3) {  /* 3 menandakan backround color hanya dirubah di section ke tiga */
+    background-color: green;
+}
+
+
