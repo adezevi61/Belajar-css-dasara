@@ -1,3 +1,21 @@
 .udang p {
     color: orange;
 }
+
+.udang > p {
+    color: green;
+    font-weight: bold;
+}
+
+.udang > .uu > p {
+    color: red;
+}
+
+a + button{
+    background-color: gray;
+}
+
+input[type="text"] {
+    color: greenyellow;
+    font-weight: bold;
+}
