@@ -1,0 +1,68 @@
+body{
+    margin: 50px;
+    border-style: solid;
+    padding: 20px;
+}
+
+
+.Lorem{
+    background-color: red;
+    border-style: dotted;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    display: inline-block;
+}
+
+.ipsum{
+    background-color: yellow;
+    border-style: dotted;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    display: inline-block;
+}
+
+.dolor{
+    background-color: green;
+    border-style: dotted;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    display: inline-block;
+}
+
+div{
+    background-color: blue;
+    border-style: dashed;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    display: inline-block;
+}
+
+h3{
+    color: yellow;
+}
+
+h3:hover{
+    color: red;
+    border-style: solid;
+    width: 110px;
+    border-radius: 30px;
+    background-color: black;
+    animation: blink 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

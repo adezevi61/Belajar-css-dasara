@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: aquamarine;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: flex;  /* fungsi flex sendiri adalah untuk memasukkan blog yang ada dalam container untuk selanjutnya baru kita tambahkan tag baru namanya flex-direction, flex-direction ini ada 4 : row (dari depan kebelakang), row-reverse (dari belakang ke depan), column (dari atas kebawah), dan column-reverse (dari bawah ke atas) */
+
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+#container div{
+    width: 200px;
+    height: 200px;
+}
