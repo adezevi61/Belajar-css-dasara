@@ -9,17 +9,45 @@ li{
 #container{
     background-color: aquamarine;
     width: 90%;
-    height: 700px;
+    /* height: 700px; */
     margin: 0 auto;
     border: 5px solid black;
     display: flex;  /* fungsi flex sendiri adalah untuk memasukkan blog yang ada dalam container untuk selanjutnya baru kita tambahkan tag baru namanya flex-direction, flex-direction ini ada 4 : row (dari depan kebelakang), row-reverse (dari belakang ke depan), column (dari atas kebawah), dan column-reverse (dari bawah ke atas) */
     flex-direction: row; /* untuk memastikan agar object tetap pada lebar container meskipin dia harus mengurangi ukuran objek jika object tidak cukup  */
-    /* justify-content: flex-end; */
-    /*flex-wrap: wrap; */ /* memperthankan ukuran objek sebenanrya dan memindahkan spacenya ke tempat lain jika tidak cukup */
-    align-items: baseline;
+    justify-content: center; /* memindahkan objek tanpa harus memindahkan posisi objek */
+    flex-wrap: wrap; /* memperthankan ukuran objek sebenanrya dan memindahkan spacenya ke tempat lain jika tidak cukup */
+    align-items: center;
+   /* align-content: center; /* hanya bekreja jika kita menggunakan flex-wrap : wrap*/
 }
 
 #container div{
     width: 200px;
     height: 200px;
+    flex-basis: 300px; /* flex-basis hanya menyesuaikan berdasarkan flex-direction, apakah row atau column, jika row dia akan memperlebar baris, namun jika kolomn akan memperlebar height */
+}
+
+/* div:nth-of-type(1){
+    align-self:flex-start;
+}
+
+div:nth-of-type(5){
+    align-self:center;
+} */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height:  500px;
+    display: flex;
+}
+
+main .sidebar {
+ background-color: green;
+ flex-grow: 1; /* flex-grow sama juga dengan flex-bassi hanya menyesuaikan berdasarkan flex-direction, apakah row atau column, jika row dia akan memperlebar baris, namun jika kolomn akan memperlebar height perbedaannya adalah flex-grow ia akan mengisi space kosong jika kita memakai pada objek yang ditentukan */
+}
+
+main .content {
+ background-color: red;
+ flex-grow: 2;
 }
