@@ -10,9 +10,13 @@ h1{
     border: 5px solid black;
     display: flex;  /* fungsi flex sendiri adalah untuk memasukkan blog yang ada dalam container untuk selanjutnya baru kita tambahkan tag baru namanya flex-direction, flex-direction ini ada 4 : row (dari depan kebelakang), row-reverse (dari belakang ke depan), column (dari atas kebawah), dan column-reverse (dari bawah ke atas) */
 
-    flex-direction: row;
+    flex-direction: column-reverse; /*jika kita hanya melakukan column reverse maka ia akan menampilkan object sesuai dengan batas containernya, namun ada caranya agar object tetap tidak berubah dengan melakukan perintah tambahan flex-wrap */
+    justify-content: center;
 
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    align-content: flex-end; /*persyaratan pemakaian align-content ini kita harus memakai flex wrap */
+
 }
 
 #container div{
