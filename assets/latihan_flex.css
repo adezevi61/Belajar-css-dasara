@@ -13,17 +13,17 @@ li{
     margin: 0 auto;
     border: 5px solid black;
     display: flex;  /* fungsi flex sendiri adalah untuk memasukkan blog yang ada dalam container untuk selanjutnya baru kita tambahkan tag baru namanya flex-direction, flex-direction ini ada 4 : row (dari depan kebelakang), row-reverse (dari belakang ke depan), column (dari atas kebawah), dan column-reverse (dari bawah ke atas) */
-    flex-direction: row; /* untuk memastikan agar object tetap pada lebar container meskipin dia harus mengurangi ukuran objek jika object tidak cukup  */
-    justify-content: center; /* memindahkan objek tanpa harus memindahkan posisi objek */
+    flex-direction: column; /* untuk memastikan agar object tetap pada lebar container meskipin dia harus mengurangi ukuran objek jika object tidak cukup  */
+    justify-content: center; /* memindahkan objek tanpa harus memindahkan posisi objek. pilihan lain selain center adalah : flex-start, flex-end, space-between, space-around, space-evenly */
     flex-wrap: wrap; /* memperthankan ukuran objek sebenanrya dan memindahkan spacenya ke tempat lain jika tidak cukup */
-    align-items: center;
+    /* align-items: center; selain center :  */
    /* align-content: center; /* hanya bekreja jika kita menggunakan flex-wrap : wrap*/
 }
 
 #container div{
-    width: 200px;
+    width: 500px;
     height: 200px;
-    flex-basis: 300px; /* flex-basis hanya menyesuaikan berdasarkan flex-direction, apakah row atau column, jika row dia akan memperlebar baris, namun jika kolomn akan memperlebar height */
+     /* flex-basis: 300px; flex-basis hanya menyesuaikan berdasarkan flex-direction, apakah row atau column, jika row dia akan memperlebar baris, namun jika kolomn akan memperlebar height */
 }
 
 /* div:nth-of-type(1){
